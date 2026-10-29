@@ -92,6 +92,8 @@
     </config-file>
 
     <podspec>
+      <!-- Cordova iOS 8 expects config/sources to be present during pod removal. -->
+      <config />
       <pods>
         <pod name="OneSignal" spec="2.16.2" />
       </pods>
