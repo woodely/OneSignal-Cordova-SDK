@@ -13,6 +13,9 @@
 
   <license>MIT</license>
 
+  <!-- Reapply the OneSignal pod deployment target after Cordova regenerates Podfile. -->
+  <hook type="after_prepare" src="hooks/ios-deployment-target.js" />
+
   <js-module src="www/OneSignal.js" name="OneSignal">
     <clobbers target="OneSignal" />
   </js-module>
